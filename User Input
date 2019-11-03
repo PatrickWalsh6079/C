@@ -6,8 +6,11 @@
 int main()
 {
 
-    // set variable to null value
+    // set variables to null values
     int age;
+    char name[20];
+    double gpa;
+    char grade;
 
     // print text asking for input
     printf("Please enter your age: ");
@@ -15,8 +18,21 @@ int main()
     // take input from user and store it in variable
     scanf("%d", &age);
 
-    // print out input
-    printf("You are %d years old!", age);
+    // print out user input
+    printf("Student age: %d\n", age);
+
+    // do the same for the next 3 inputs:
+    printf("Please enter your name: ");
+    scanf("%s", name);
+    printf("Student Name: %s\n", name);
+
+    printf("Please enter your Grade: ");
+    scanf(" %c", &grade);
+    printf("Student Grade: %c\n", grade);
+
+    printf("Please enter your GPA: ");
+    scanf("%lf", &gpa);
+    printf("Student GPA: %f\n", gpa);
 
 
     return 0;

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Take input from user with printf and scanf methods
+
+int main()
+{
+
+    // set variable to null value
+    int age;
+
+    // print text asking for input
+    printf("Please enter your age: ");
+
+    // take input from user and store it in variable
+    scanf("%d", &age);
+
+    // print out input
+    printf("You are %d years old!", age);
+
+
+    return 0;
+}

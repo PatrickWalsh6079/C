@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// These are some of the basic math operators used in C
+
+int main()
+{
+    // Addition with integers
+    printf("%d\n", 8 + 1);
+
+    // Addition with floating points
+    printf("%f\n", 8.2 + 1.0);
+
+    // Multiplication
+    printf("%d\n", 2 * 5);
+
+    //Division
+    printf("%f\n", 63 / 4);
+
+    // Exponents (2^3 in this case)
+    printf("%f\n", pow(2,3) );
+
+    // Square root (square root of 36 in this case)
+    printf("%f\n", sqrt(36) );
+
+    // Rounding up
+    printf("%f\n", ceil(36.13) );
+
+    //Rounding down
+    printf("%f\n", floor(36.45) );
+
+    return 0;
+}

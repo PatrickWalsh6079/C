@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//This program sets different data types to variables, and then prints text 
+//onto the screen using those variables.
+
+int main()
+{
+    //integer variable:
+    int age = 29;
+
+    //decimal double variable:
+    double gpa = 3.9;
+
+    //single character variable:
+    char grade = 'A';
+
+    //string characters variable:
+    char phrase[] = "This student is an A student.";
+
+    printf("The student's age is %d.\nStudent's GPA is %f.\nStudent's grade is %c.\n", age, gpa, grade);
+    printf("Comment: %s\n", phrase);
+
+
+    return 0;
+}

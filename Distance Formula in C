@@ -1,0 +1,19 @@
+// C code
+// This program will calculate the distance d given the rate r and time t
+#include <stdio.h>
+int main ()
+{
+	printf("Name: Patrick Walsh\n");
+	
+ /* variable definition: */
+ int d, r, t;
+ /* variable initialization */
+ r = 62;
+ t = 2;
+ d = r * t;
+ printf("Let the rate r = speed in miles per hour\n");
+ printf("Let the time t = time spent traveling in hours\n");
+ printf("Let the distance d = how far the object has moved in miles given r and t\n\n");
+ printf("The distance for rate: %d mph and time: %d hours is: \n%d miles\n", r,t,d);
+ return 0;
+}

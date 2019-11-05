@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Build a basic calculator in C
+
+int main()
+{
+
+    // Enter two numbers and the calculator will add them together
+    int num1;
+    int num2;
+
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    printf("The Answer is: %d", num1 + num2);
+
+
+    return 0;
+}

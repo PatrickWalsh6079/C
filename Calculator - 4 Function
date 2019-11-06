@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Calculator that takes in an input number, an operator, and another input number and
+// performs either addition, subtraction, multiplication, or division, depending on user input
+
+
+
+int main()
+{
+    double num1;
+    char op;
+    double num2;
+
+    printf("Enter first number: ");
+    scanf("%lf", &num1);
+    printf("Enter operator: ");
+    scanf(" %c", &op);
+    printf("Enter second number: ");
+    scanf("%lf", &num2);
+
+    if(op == '+'){
+        printf("%f", num1 + num2);
+    } else if(op == '-'){
+        printf("%f", num1 - num2);
+    } else if(op == '/'){
+        printf("%f", num1 / num2);
+    } else if(op == '*'){
+        printf("%f", num1 * num2);
+    } else{
+        printf("Invalid operator!");
+    }
+
+    return 0;
+}
+
+
+

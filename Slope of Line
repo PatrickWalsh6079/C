@@ -1,0 +1,27 @@
+// C code
+// This program will calculate the sum and average of 5 integers.
+// Developer: Patrick Walsh
+// Date: 11/16/2019
+#include <stdio.h>
+int main ()
+{
+    // set variables
+    double m,x,b,y;
+
+    printf("Enter the value for m: \n");
+    scanf("%lf", &m);
+    printf("Enter the value for x: \n");
+    scanf("%lf", &x);
+    printf("Enter the value for b: \n");
+    scanf("%lf", &b);
+
+    // calculates value of y
+    y = (m*x) + b;
+    printf("y = %f\n", y);
+
+    // checks if y > 10
+    if (y > 10)
+        printf("y is > 10!\n");
+
+     return 0;
+}

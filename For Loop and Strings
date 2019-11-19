@@ -1,0 +1,17 @@
+#include <stdio.h>
+// program prints out shape of triangle
+
+int main(void) {
+
+	char star[20] = "*", extra[20] = "*";
+
+	int x;
+
+	for (x = 1; x < 14; x++){
+		printf("%s\n", star);
+		strcat(star, extra);
+	}
+
+
+	return 0;
+}

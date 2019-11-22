@@ -1,0 +1,34 @@
+#include <stdio.h>
+// program checks letter grade and prints a statement accordingly using switch statements
+
+int main(void) {
+
+	// define grade here
+	char grade = 'F';
+
+	// check grade with switch statements
+	switch(grade){
+    case 'A':
+        printf("You got an A!\n");
+        break;
+    case 'B':
+        printf("You got a B!\n");
+        break;
+    case 'C':
+        printf("You got a C!\n");
+        break;
+    case 'D':
+        printf("You got a D!\n");
+        break;
+    case 'F':
+        printf("You got an F!\n");
+        break;
+    default:
+        printf("Invalid entry\n");
+
+
+	}
+
+
+	return 0;
+}

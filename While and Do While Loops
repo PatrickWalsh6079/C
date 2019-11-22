@@ -1,0 +1,25 @@
+#include <stdio.h>
+// use while loop and do while loop to print incrementing digits on screen
+
+
+int main(void) {
+
+    int index = 1;
+
+    // while loop checks condition first, then executes code
+    while(index <= 5){
+
+        printf("%d\n", index);
+        index++;
+    }
+    
+    // do while loop executes code, then checks condition
+
+    do {
+        printf("%d\n", index);
+        index++;
+    } while(index <= 7);
+
+
+	return 0;
+}

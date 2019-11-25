@@ -1,0 +1,26 @@
+// C code
+// This program calculates the sum of total miles
+// run or walked in a typical week
+// Developer: Patrick Walsh
+// Date: 11/24/2019
+#include <stdio.h>
+
+int main () {
+    // set variables for miles, total, and count
+    double miles, total;
+    int count=0;
+
+    // start loop and ask user input
+    while (count<7){
+            // user enters miles for each day
+            printf("How many miles walked/run on day %d: \n",count+1);
+            scanf("%lf", &miles);
+            total = total + miles;
+            count = count+1;
+    }
+
+
+    // show sum of miles for the week
+    printf("\nTotal miles for the week: %f", total);
+
+} // end main

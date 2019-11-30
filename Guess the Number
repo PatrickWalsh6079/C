@@ -1,0 +1,24 @@
+// C code
+// Guess the number! This game asks for user to guess the secret number
+// and keeps asking until the user gets it right.
+// Developer: Patrick Walsh
+// Date: 11/29/2019
+#include <stdio.h>
+
+int main () {
+    int secretNumber = 5;
+    int userGuess;
+
+    // Asks for user to guess number until correct
+    while(userGuess != secretNumber){
+        printf("Try to guess the secret number! ");
+        scanf("%d", &userGuess);
+        if (userGuess != secretNumber)
+            printf("Wrong! Access denied.\n\n");
+
+    }
+    printf("\nAccess granted\n");
+
+
+    return 0;
+} // end main

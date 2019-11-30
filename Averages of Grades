@@ -1,0 +1,38 @@
+// C code
+// This program will calculate the average
+// of 3 exams for students.
+// Developer: Patrick Walsh
+// Date: 11/30/2019
+#include <stdio.h>
+
+int main(void) {
+     // variable declarations:
+     char name[100], another = 'y';
+     float sum, grade, average;
+     int students, exams;
+
+     // while loop initially set to yes
+     while (another == 'y') {
+     printf ("Enter 3 grades and student name: ");
+     sum = 0;
+
+         for (exams = 0; exams < 3; exams++) {
+         // float uses %f, double uses %lf
+         scanf ("%f", &grade);
+         sum = sum + grade;
+         } // end for each exam
+
+     average = sum / 3;
+     scanf ("%s", name);
+     printf ("Average for %s is %.2f\n", name, average);
+
+     // asks user whether they want to add another student
+     printf("\nAdd another student? Y/N ");
+     scanf(" %c", &another);
+     printf("\n");
+     }
+
+     printf("... Bye ...\n");
+     return 0;
+
+} // end main

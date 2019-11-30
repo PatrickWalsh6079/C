@@ -24,8 +24,11 @@ int main () {
         printf("Try to guess the secret number! ");
         scanf("%d", &userGuess);
             if (userGuess != secretNumber){
-                printf("Wrong! Access denied.\n\n");
                 guessCount++;
+                printf("\nWrong! Access denied.\n", guessCount);
+                printf("Chances left: %d\n\n", guessLimit-guessCount);
+
+
             }
         } else{
             printf("Ran out of guesses! Account locked\n");

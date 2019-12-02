@@ -1,0 +1,20 @@
+// C code
+// This code shows how to create pointer data types which are derived from memory addresses of variables
+// Developer: Patrick Walsh
+// Date: 12/1/2019
+#include <stdio.h>
+
+int main(void) {
+
+     // define some variables
+     int age = 29;
+     double gpa = 4.0;
+     char grade = 'A';
+
+     // create pointer variables from above variables
+     int * pAge = &age;
+     double * pGpa = &gpa;
+     char * pGrade = &grade;
+
+     return 0;
+} // end main

@@ -1,0 +1,19 @@
+// C code
+// This code shows how to print the memory address of variables
+// Developer: Patrick Walsh
+// Date: 12/1/2019
+#include <stdio.h>
+
+int main(void) {
+
+     // define some variables
+     int age = 29;
+     double gpa = 4.0;
+     char grade = 'A';
+
+     // print out memory addresses as they are stored in RAM
+     // Use %p for printing memory address
+     printf("age: %p\ngpa: %p\ngrade: %p", &age, &gpa, &grade);
+
+     return 0;
+} // end main

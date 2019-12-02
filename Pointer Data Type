@@ -1,5 +1,6 @@
 // C code
 // This code shows how to create pointer data types which are derived from memory addresses of variables
+// And print the pointer data type.
 // Developer: Patrick Walsh
 // Date: 12/1/2019
 #include <stdio.h>
@@ -15,6 +16,10 @@ int main(void) {
      int * pAge = &age;
      double * pGpa = &gpa;
      char * pGrade = &grade;
+
+     // print out pointers which are the memory addresses
+     // of the variables from which they derive
+     printf("age: %p\ngpa: %p\ngrade: %p\n", pAge, pGpa, pGrade);
 
      return 0;
 } // end main

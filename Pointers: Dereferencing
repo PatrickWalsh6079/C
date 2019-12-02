@@ -1,0 +1,28 @@
+// C code
+// This code shows how to create pointer data types which are derived from memory addresses of variables.
+// It then prints out the pointer values, then dereferences them and prints their variable values.
+// Developer: Patrick Walsh
+// Date: 12/1/2019
+#include <stdio.h>
+
+int main(void) {
+
+     // define some variables
+     int age = 29;
+     double gpa = 4.0;
+     char grade = 'A';
+
+     // create pointer variables from above variables
+     int * pAge = &age;
+     double * pGpa = &gpa;
+     char * pGrade = &grade;
+
+     // print out pointers which are the memory addresses
+     // of the variables from which they derive
+     printf("age: %p\ngpa: %p\ngrade: %p\n", pAge, pGpa, pGrade);
+
+     // dereference pointer and print out variable value rather than memory address
+     printf("age: %d\ngpa: %f\ngrade: %c\n", *pAge, *pGpa, *pGrade);
+
+     return 0;
+} // end main

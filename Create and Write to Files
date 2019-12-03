@@ -1,0 +1,30 @@
+// C code
+// This code shows how to create and write to files.
+// Developer: Patrick Walsh
+// Date: 12/2/2019
+#include <stdio.h>
+
+int main(void) {
+
+     // fopen takes two parameters: name of file, and file mode.
+     // name of file is either just file name or file name with path.
+     // file mode is "w" for write, "a" for append, or "r" for read.
+     FILE * fpointer = fopen("employees.txt", "w");
+
+     // fprintf takes in two parameters: name of variable from which file
+     // was created, and actual text you are writing/appending to file.
+     fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accountant");
+
+     // always close file. Takes in variable name used to create file.
+     fclose(fpointer);
+
+
+     // after closing file, let's open it back up with new variable
+     // and append additional info.
+     FILE * fpointerApp = fopen("employees.txt", "a");
+     fprintf(fpointerApp, "\nToby, Human Resources\nMichael, Regional Manager");
+     fclose(fpointerApp);
+
+     return 0;
+
+} // end main

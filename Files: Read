@@ -1,0 +1,39 @@
+// C code
+// This code shows how to read files and print out result
+// Developer: Patrick Walsh
+// Date: 12/2/2019
+#include <stdio.h>
+
+int main(void) {
+
+     // create variable which will hold text from file
+     char line[255];
+
+     // now open file
+     // takes in two parameters: first is name of file, second is file mode.
+     // "r" means read mode.
+     FILE * fpointer = fopen("employees.txt", "r");
+
+     // fgets takes text from file.
+     // takes in three parameters: first is variable name where text will be stored,
+     //second is character limit, third is variable which opened the file.
+     fgets(line, 255, fpointer);
+
+     // now you can print out text variable
+     printf("%s", line); // prints out only first line
+
+
+
+     // to print out the rest of the lines, let's use a while loop.
+     while(fgets(line, sizeof(line), fpointer) != NULL){
+
+            printf("%s", line);
+
+     }
+
+
+     fclose(fpointer);
+
+     return 0;
+
+} // end main

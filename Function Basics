@@ -1,0 +1,26 @@
+// C code
+// This program prompts user to enter number.
+// It squares the number, multiplies it by Pi, then
+// prints the result as a double (decimal number).
+// from user input.
+// Developer: Patrick Walsh
+// Date: 12/4/2019
+
+#include <stdio.h>
+
+void calc();
+
+int main() {
+    calc();
+
+    return 0;
+} // end main
+
+void calc(){
+    double num, result;
+    printf("Please enter a number: ");
+    scanf("%lf", &num);
+    result = num * num * 3.14;
+    printf("\nNumber = %.2f^2 * Pi = %.2f\n", num, result);
+
+}

@@ -2,7 +2,6 @@
 // This program prompts user to enter number.
 // It squares the number, multiplies it by Pi, then
 // prints the result as a double (decimal number).
-// from user input.
 // Developer: Patrick Walsh
 // Date: 12/4/2019
 

@@ -8,9 +8,11 @@
 
 #include <stdio.h>
 
+// let C know about function called calc()
 void calc();
 
 int main() {
+    // run calc function inside main function
     calc();
 
     return 0;

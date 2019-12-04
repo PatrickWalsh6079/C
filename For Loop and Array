@@ -1,0 +1,28 @@
+// C code
+// This code uses a for loop to populate an array of 10 integers.
+// Developer: Patrick Walsh
+// Date: 12/4/2019
+#include <stdio.h>
+
+int main(void) {
+
+    // define array size and count variable
+    int array[10];
+    int count;
+
+    // use for loop to ask user input
+    for (count = 0; count < 10; count++){
+
+        printf("Enter a number: ");
+        scanf("%d", &array[count]);
+    }
+
+    //iterate through array and print each element
+    printf("\nThis is the array:\n");
+    for (count = 0; count < 10; count++){
+        printf("%d, ", array[count]);
+    }
+
+    return 0;
+
+} // end main
